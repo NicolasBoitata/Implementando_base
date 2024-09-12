@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627138852250",
+    "project_id": "como-funciona-o-login",
+    "storage_bucket": "como-funciona-o-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627138852250:android:c44c0c38fa6af271303623",
+        "android_client_info": {
+          "package_name": "com.example.implementandobase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQISjdbStIiyQYE3NhJC4BO4yCAnog-o4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
