@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract
 import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult
+import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
@@ -46,6 +47,14 @@ class SignInActivity : AppCompatActivity() {
         signInButton.setOnClickListener {
             startSignIn()
         }
+
+        FirebaseApp.initializeApp(this) // Initialize Firebase
+
+        val auth = FirebaseAuth.getInstance() // Now you can safely access Firebase Authentication
+        // ... your Firebase Authentication code ...
+
+        FirebaseApp.initializeApp(this) // 'this' refers to the Activity context
+
     }
 
     override fun onStart() {
